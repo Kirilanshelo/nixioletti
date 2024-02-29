@@ -1,0 +1,23 @@
+24-02-29 19:04:44 [16016] [INFO] (app:<module>) App starting...
+24-02-29 19:06:16 [656] [INFO] (app:<module>) App starting...
+24-02-29 19:06:20 [656] [INFO] (uvicorn.access:send) 127.0.0.1:33486 - "GET / HTTP/1.1" 404
+24-02-29 19:06:20 [656] [INFO] (uvicorn.access:send) 127.0.0.1:33486 - "GET /favicon.ico HTTP/1.1" 404
+24-02-29 19:06:33 [656] [INFO] (uvicorn.access:send) 127.0.0.1:33487 - "GET /version HTTP/1.1" 200
+24-02-29 19:06:33 [656] [INFO] (uvicorn.access:send) 127.0.0.1:33487 - "GET /favicon.ico HTTP/1.1" 404
+24-02-29 19:06:39 [656] [INFO] (uvicorn.access:send) 127.0.0.1:33488 - "GET /miniui/ui HTTP/1.1" 200
+24-02-29 19:06:39 [656] [INFO] (uvicorn.access:send) 127.0.0.1:33488 - "GET /favicon.ico HTTP/1.1" 404
+24-02-29 19:07:10 [656] [INFO] (uvicorn.access:send) 127.0.0.1:33509 - "POST /miniui/api HTTP/1.1" 500
+24-02-29 19:13:28 [5520] [INFO] (app:<module>) App starting...
+24-02-29 19:13:33 [5520] [WARNING] (easyocr.easyocr:__init__) Using CPU. Note: This module is much faster with a GPU.
+24-02-29 19:13:39 [5520] [INFO] (mylib:do_task) ai task done
+24-02-29 19:13:39 [5520] [INFO] (uvicorn.access:send) 127.0.0.1:42145 - "POST /miniui/api HTTP/1.1" 200
+24-02-29 19:13:45 [5520] [WARNING] (easyocr.easyocr:__init__) Using CPU. Note: This module is much faster with a GPU.
+24-02-29 19:13:51 [5520] [INFO] (mylib:do_task) ai task done
+24-02-29 19:13:51 [5520] [INFO] (uvicorn.access:send) 127.0.0.1:42146 - "POST /miniui/api HTTP/1.1" 200
+24-02-29 19:14:27 [5520] [DEBUG] (PIL.PngImagePlugin:call) STREAM b'IHDR' 16 13
+24-02-29 19:14:27 [5520] [DEBUG] (PIL.PngImagePlugin:call) STREAM b'tEXt' 41 25
+24-02-29 19:14:27 [5520] [DEBUG] (PIL.PngImagePlugin:call) STREAM b'iTXt' 78 786
+24-02-29 19:14:27 [5520] [DEBUG] (PIL.PngImagePlugin:call) STREAM b'IDAT' 876 109002
+24-02-29 19:14:27 [5520] [WARNING] (easyocr.easyocr:__init__) Using CPU. Note: This module is much faster with a GPU.
+24-02-29 19:14:30 [5520] [INFO] (mylib:do_task) ai task done
+24-02-29 19:14:30 [5520] [INFO] (uvicorn.access:send) 127.0.0.1:22046 - "POST /miniui/api HTTP/1.1" 200

@@ -1,0 +1,24 @@
+version: '3.4'
+services:
+  app:
+    build:
+      context: '.'
+      args:
+        VERSION: docker-dev
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ['0']
+              capabilities: [gpu]
+    environment:
+      # gunicorn
+      - TZ=UTC
+      - WORKERS_PER_CORE=1
+      - MAX_WORKERS=1
+      - TIMEOUT=300
+      # app
+      - MYVAR=myvalue
+    ports:
+      - 9106:80

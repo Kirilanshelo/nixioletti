@@ -1,0 +1,23 @@
+version: '3.5'
+services:
+  app:
+    image: template-ml:dev
+    deploy:
+      resources:
+        reservations:
+          generic_resources:
+            - discrete_resource_spec:
+                kind: 'NVIDIA-GPU'
+                value: 0
+    environment:
+      # gunicorn
+      - TZ=UTC
+      - WORKERS_PER_CORE=1
+      - MAX_WORKERS=1
+      - TIMEOUT=300
+      # nvidia gpu
+      - NVIDIA_VISIBLE_DEVICES=0
+      # app
+      - MYVAR=myvalue
+    ports:
+      - 11000:80
